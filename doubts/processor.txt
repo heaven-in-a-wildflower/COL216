@@ -1,0 +1,2 @@
+-> How do the UJ and SB instruction type formats simplify hardware by reducing the number of unique inputs to the mux?
+

@@ -1,0 +1,21 @@
+-> Do execeptions cause transfer of control to os like interrupts?
+
+-> How does memory-mapped i/o differ from i/o instructions?
+
+-> When is the interrupt-enable bit to be toggled?
+
+-> How are the 2 lsbs in the interrupt mask field sufficient to handle software interrupts?
+
+-> What problems does dma create?
+
+-> 'The problem with using physical addresses in dma is that transfer cannot easily cross a page boundary. If an i/o request crossed a page boundary, then the memory locations to which it was being transferred would not necessarily be contiguous in virtual memory.' Explain. In fact, how is this a problem in the first place ?
+
+-> 'For a system in which dma is based on virtual addresses, the dma unit has a small number of map entries that provide virtual to physical mapping of a transfer. The os provides the mapping when the i/o is initiated. By using this mapping, dma unit need not worry about positioning of virtual pages involved in the tranfer.' Explain.
+
+-> Which is more advantageous? To use physical addresses by breaking the dma transfer into a series of transfers each confined to a single physical page V/S dma transfers which cross page boundaries and are based on virtual addresses?
+
+-> Explain demand based cache flushing. What should its threshold be in different environments?
+
+-> Why should the os invalidate the cache for an i/o read ?
+
+->Why does dma have lower latency overall than interrupt driven approach?

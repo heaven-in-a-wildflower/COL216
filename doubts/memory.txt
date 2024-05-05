@@ -1,0 +1,69 @@
+->Pros and cons of unified cache over separate caches for data and instructions?
+
+->Why is the clock rate of a bus much smaller than the processor's?
+
+->Why is it difficult to reduce the latency involved in fetching the first word from memory?
+
+->The processing of a cache miss creates a stall similar to a pipeline stall as opposed to an interrupt which requires saving the state of the registers.Explain.
+
+->'In contrast to cache miss stalls, pipeline stalls are more complex since they require continuing executinf some instructions while stopping the others'.Explain.
+
+->Why are the read and write miss penalties in write-through caches the same?	
+->'When calculating CPI, the cache miss penalty is measured in processor clock cycles needed for a miss. Therefore, if the main memories of two processors have the same absolute access times, a higher processor clock rate leads to a larger miss penalty.' How would it matter if the absolute time taken is the same?
+
+->Going from one-way to two-way associativity decreases the miss rate by about 15%, but there is little further improvement in going to higher associativity.Why? In which cases is higher associativity desired and why?
+
+->Pg503,  In some implementations, the Output enable signals on the
+data portions of the cache RAMs can be used to select the entry in the set that drives the output. The Output enable signal comes from the compara-
+tors, causing the element that matches to drive the data outputs. This organization eliminates the need for the multiplexor. Explain.
+
+->What is the reason for preferring smaller page sizes in newer embedded systems?
+
+->Although we normally think of virtual addresses as much larger than
+physical addresses, the opposite can occur when the processor address size is small rel-
+ative to the state of the memory technology. No single program can benefit, but a collec-
+tion of programs running at the same time can benefit from not having to be swapped to
+memory or by running on parallel processors. Given that Moore’s law applies to DRAM,
+32-bit processors are already problematic for servers and soon for desktops. Explain.
+
+->Segmentation vs paging. Pros and cons.
+
+->What is the advantage in dividing the page tabke into 2 segments and letting them grow towards each other.Why is this approach disadvantageous when memory addresses are accessed in a sparse fashion?
+
+->Whys is the loopkup process more complex for inverted page tables?
+
+->Multiple levels of page tables -  This scheme allows the address space to be used in a
+sparse fashion (multiple noncontiguous segments can be active) without having to
+allocate the entire page table. Such schemes are particularly useful with very large
+address spaces and in software systems that require noncontiguous allocation.
+The primary disadvantage of this two-level mapping is the more complex process
+for address translation. Explain.
+
+-> How does paging of page tables allow them to occupy lesser space in the memory?
+
+->In practice, there is little performance difference in how hardware or software handle TLB misses. Why?
+
+->Why is the block size of a TLB small?(only 1 or 2 page table entries.)
+
+->Why are virtual and physical memory of the same size in Intrinsity FastMATH TLB?
+
+->On average,which would take more time?
+	a.tlb miss, page table , cache miss(2-3 levels in real systems), physical memory access
+	b.tlb miss, page table, disk access
+
+->Why does the Infinity fastMATH have a block offset field in the physical address?
+
+->How can tlb and caches accesses be pipelined?
+
+->Explain how aliasing problem does not occur in virtually index physically tagged caches.
+
+->How significance is the performance advantage of virtually addressed caches over physically addressed caches? Is there any other latency involved except the page table access?
+
+->What are the tradeoffs associated with variable page sizes? 
+
+->Smaller caches obtain a significantly larger absolute benefit from associativity
+because the base miss rate of a small cache is larger. Explain
+
+->Why is the performance of random replacement policy not too bad(1.1 times worse) than approx lru?
+
+->why is software managed tlb handling faster than hardware in case of prefetching?	 

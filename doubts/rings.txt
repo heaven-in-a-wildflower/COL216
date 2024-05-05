@@ -1,0 +1,9 @@
+-> Difference between cpu modes and rings? Which is a hardware featutre and which a software feature? Why should their numbers differ and what are the pros and comns of that?
+
+-> Pros and cons of setting the hypervisor at ring level -1? What privileges does it have?
+
+-> In most systems, switching from use mode to kernel mode has high cost on performance. Why is it so?
+
+-> Why do most modern operating systems like windows,linux and macos provide only 2 rings?
+
+-> Should system calls be allowed to change the privilege mode of the cpu?
